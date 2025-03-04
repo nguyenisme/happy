@@ -1,0 +1,165 @@
+
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f4ff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            transition: background-color 0.5s;
+        }
+        
+        .container {
+            max-width: 500px;
+            padding: 30px;
+            text-align: center;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            transform: translateY(0);
+            transition: all 0.5s;
+        }
+        
+        h1 {
+            color: #ff69b4;
+            margin-bottom: 20px;
+        }
+        
+        input {
+            width: 80%;
+            padding: 12px;
+            margin: 15px 0;
+            border: 2px solid #ffb6c1;
+            border-radius: 30px;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s;
+        }
+        
+        input:focus {
+            border-color: #ff69b4;
+            box-shadow: 0 0 8px rgba(255, 105, 180, 0.5);
+        }
+        
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        
+        button:hover {
+            background-color: #ff1493;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+        }
+        
+        .invitation {
+            display: none;
+            animation: fadeIn 1s;
+        }
+        
+        .form {
+            animation: fadeIn 1s;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .invitation-card {
+            background: linear-gradient(135deg, #fff0f5, #fff8dc);
+            padding: 30px;
+            border-radius: 15px;
+            border: 2px dashed #ff69b4;
+            position: relative;
+        }
+        
+        .decoration {
+            position: absolute;
+            font-size: 30px;
+        }
+        
+        .decoration:nth-child(1) {
+            top: 10px;
+            left: 20px;
+        }
+        
+        .decoration:nth-child(2) {
+            top: 10px;
+            right: 20px;
+        }
+        
+        .decoration:nth-child(3) {
+            bottom: 10px;
+            left: 20px;
+        }
+        
+        .decoration:nth-child(4) {
+            bottom: 10px;
+            right: 20px;
+        }
+        
+        .guest-name {
+            color: #ff1493;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .host-name {
+            color: #4b0082;
+            font-weight: bold;
+            margin-top: 30px;
+        }
+        
+        .cake {
+            font-size: 60px;
+            margin: 20px 0;
+            animation: bounce 2s infinite;
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
+        }
+        
+        .balloon {
+            font-size: 30px;
+            display: inline-block;
+            margin: 0 10px;
+            animation: float 3s infinite;
+        }
+        
+        .balloon:nth-child(2) {
+            animation-delay: 0.5s;
+        }
+        
+        .balloon:nth-child(3) {
+            animation-delay: 1s;
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px) rotate(5deg); }
+        }
+        
+        .details {
+            margin: 25px 0;
+            line-height: 1.8;
+            color: #333;
+        }
+        
+        .highlight {
+            background-color: #ffb6c1;
+            padding: 2px 5px;
+            border-radius: 3px;
+            font-weight: bold;
+        }

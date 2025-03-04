@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thiệp Mời Sinh Nhật</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form" id="nameForm">
+            <h1>Thiệp Mời Sinh Nhật</h1>
+            <p>Vui lòng nhập tên của bạn để xem thiệp mời:</p>
+            <input type="text" id="guestName" placeholder="Nhập tên của bạn">
+            <p></p>
+            <button onclick="showInvitation()">Xác Nhận</button>
+        </div>
+        
+        <div class="invitation" id="invitation">
+            <div class="invitation-card">
+                <div class="decoration">🎉</div>
+                <div class="decoration">🎊</div>
+                <div class="decoration">✨</div>
+                <div class="decoration">🎁</div>
+                
+                <h1>Thiệp Mời Sinh Nhật</h1>
+                
+                <div class="balloon">🎈</div>
+                <div class="balloon">🎈</div>
+                <div class="balloon">🎈</div>
+                
+                <div>
+                    <p>Thân mời, <span class="guest-name" id="displayName"></span></p>
+                    <p>đến tham dự buổi tiệc sinh nhật của tuii!</p>
+                </div>
+                <div class="cake">🎂</div>
+                
+                <div class="details">
+                    <p>Thời gian: <span class="highlight">19:00, ngày 20/03/2025</span></p>
+                    <p>Địa điểm: <span class="highlight">Ở đâu đó đó không biết</span></p>
+                    <!--<p>Dress code: <span class="highlight">Smart casual</span></p>
+                    <p>Xin vui lòng xác nhận tham dự trước ngày 15/03/2025</p>-->
+                </div>
+                
+                <p>Rất mong được đón tiếp bạn!</p>
+                <p class="host-name">Nguyễn Thị Kiều Mơ</p>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
